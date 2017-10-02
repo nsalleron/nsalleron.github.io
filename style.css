@@ -1,0 +1,388 @@
+/* Propriétés générales */
+
+
+body
+{
+    /* color: black; */
+    /* background-color: #FCFCFF; */
+    min-width: 300px;
+    /* overflow: scroll; */
+    max-width: 1200px;
+    /* position: absolute; */
+    /* top: 0px; */
+    /* z-index: 0; */
+    /* width: 800px; */
+    margin: auto;
+    /* overflow: hidden; */
+}
+
+.width-20{
+    width:20%;
+}
+
+.width-35{
+    width:25%;
+}
+
+.padding-15{
+    padding-left:15%;
+}
+
+@media only screen and (max-width: 700px){
+    [class*="width-"]{
+        width: 100%;
+    }
+    [class*="padding-"]{
+        padding-left:0;
+    }
+}
+
+#bloc_page
+{
+    /* min-width: 800px; */
+    /* max-width: 1000px; */
+    /* /\* position: absolute; *\/ */
+    /* /\* top: 0px; *\/ */
+    /* /\* z-index: 0; *\/ */
+    /* /\* width: 800px; *\/ */
+    /* margin: auto; */
+    /* overflow: hidden; */
+}
+
+/* Aides pour le design */
+*
+{
+    /* font-family:  serif; */
+    /* border: 1px black solid; */
+}
+
+/* Header */
+header
+{
+    display: block;
+    position: relative;
+    background-color: #F0F0FF;
+    width: 100%;
+    margin-top: 40px;
+    /* border: 1px black solid; */
+}
+
+#photo
+{
+    padding: 5px;
+    display: inline-block;
+}
+
+#photo img
+{
+    max-width: 100%;
+    max-height: 180px;
+}
+
+#nom
+{
+    display: inline-block;
+    width: 20%;
+    vertical-align: top;
+}
+header h2
+{
+    font-size: 1em;
+}
+#coordonnees
+{
+    display: inline-block;
+    width: 35%;
+    padding-left: 15%;
+    vertical-align: top;
+}
+
+/* a[href*=mailto] */
+#left-band a
+{
+    /* color: #000055; */
+    /* font-family: monospace, Courier, sans-serif, serif; */
+    /* font-size: 9pt; */
+    text-decoration: none;
+    /* color: inherit; */
+}
+
+/* Nav */
+nav
+{
+    display: block;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    vertical-align: top;
+    /* text-align: justify; */
+    z-index: 1;
+    /* background-color: #FCFCFF; */
+    /* border-bottom: 3px #0000FF double; */
+    height: 20px;
+    width: 100%;
+    padding-bottom: 10px;
+/* margin: auto; */
+}
+
+nav #menu
+{
+    /* min-width: 800px; */
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+}
+
+nav #menu_right
+{
+    display: inline-block;
+    position: absolute;
+    text-align: right;
+    top: 0px;
+    right: 0px;
+    padding-top: 2px;
+    /* padding-right:1.5em; */
+    /* text-align: right; */
+    /* margin-left: auto; */
+    /* margin-right: 0px; */
+    /* max-height: 20px; */
+    /* overflow: hide; */
+    /* padding-top: 0px; */
+    /* padding-bottom: 0px; */
+}
+
+nav #menu_left
+{
+    display: inline-block;
+    position: absolute;
+    /* margin-left:0px; */
+    /* margin-right:auto; */
+    top: 0px;
+    left: 0px;
+    text-align: left;
+    /* padding-top: 0px; */
+    /* padding-bottom: 0px; */
+}
+
+nav ul
+{
+    list-style-type:none;
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+nav li
+{
+    display: inline-block;
+}
+#menu_left li
+{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+}
+
+#menu_right a
+{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1em;
+    color: #181818;
+    text-decoration: none;
+}
+#menu_right a:hover
+{
+    /* background-color: #000076; */
+    background-color: 
+    color: white; 
+}
+
+/* Section */
+/* h1 */
+/* { */
+/*     padding-top: 40px; */
+/*     margin-top: -30px; */
+/*     font-family: sans-serif; */
+/*     font-size: 30px; */
+/*     text-align: center; */
+/* } */
+
+h2[id]
+{
+    /* font-family: sans-serif; */
+    /* font-size: 24px; */
+    /* padding-top: 80px; */
+    /* margin-top: -2px; */
+    margin-bottom: -5px;
+}
+
+/* h3 */
+/* { */
+/*     font-family: sans-serif; */
+/*     font-size: 20px; */
+/*     padding-left: 10px; */
+/*     margin-top: -5px; */
+/*     margin-bottom: -5px; */
+/* } */
+
+h2[id="first"]
+{
+    margin-top: 0px;
+}
+
+h2[id="apropos"] 
+{
+    /* margin-top: -20px; */
+}
+
+section
+{
+    display: inline-block;
+    height: 75%;
+    width: 100%;
+    overflow: auto;
+    vertical-align: top;
+}
+section h2
+{
+    color: black;
+    
+}
+
+.text
+{
+    text-align:justify;
+}
+
+.mono
+{
+    font-family: Courier, monospace, sans-serif, serif;
+    font-size: 10pt;
+    text-decoration: none;
+}
+
+.sc
+{
+    /* font-variant: small-caps; */
+}
+
+body a
+{
+    text-decoration: none;
+    /* border-width: 1px; */
+    /* border-style: dotted; */
+    /* color: #004a43; */
+    /* color: inherit; */
+}
+
+.w3-container a{
+    color: #004a43;
+}
+
+
+.inherit-link a{
+    color: inherit;
+}
+
+body h2 a
+{
+    /* text-decoration: underline; */
+    /* text-decoration-style: dotted; */
+    /* text-decoration-width: 1px; */
+    border-bottom: 1px solid;
+    color: inherit;
+    /* color: #FF0000; */
+    /* border-width: 1px; */
+    /* border-style: dotted; */
+    /* color: #004a43; */
+}
+
+
+section li
+{
+    margin-bottom: 5px;
+}
+
+body a:hover
+{
+    /* background-color: #000055; */
+    /* color: white; */
+}
+
+/* section a:visited */
+/* { */
+/*     color: #555; */
+/* } */
+
+.figure-number
+{
+    display: none;
+}
+
+/* Footer */
+/* footer */
+/* { */
+/*     font-size: 0.8em; */
+/* } */
+
+.validation{
+    display: none;
+}
+
+#name-on-pic{
+    background: rgb(97, 97, 97); /* Fallback for older browsers without RGBA-support */
+    background: rgba(97, 97, 97, 0.7);
+}
+
+
+
+/* ul.w3-ul{ */
+/*     list-style-type:disc outside none; */
+/*     /\* padding: 10px; *\/ */
+/* } */
+/* ul.w3-ul li{ */
+/*     list-style-type:disc outside none; */
+/*     padding:6px 2px 6px 16px;border-bottom:1px solid #ddd} */
+/* ul.w3-ul li:last-child{border-bottom:none} */
+
+/* footer #valid */
+/* { */
+/*     display: inline-block; */
+/* } */
+
+/* #timestamp */
+/* { */
+/*     display: inline-block; */
+/*     position: relative; */
+/*     bottom: 10px; */
+/*     left: 55%; */
+/*     text-align: right; */
+/* } */
+
+.left{
+    text-align:left; width: 50%; display:inline-block;
+}
+
+.right{
+    text-align:right; width: 49%; display:inline-block;
+}
+
+
+@media  only screen and (max-width:992px){
+    .my-left{float:left;width:26%;min-width:261px}
+    .my-right{}
+    .my-nav{position:fixed}
+}
+
+@media only screen and (max-width:600px){
+    .my-left{float:center;width:100%;min-width:initial}
+    .my-right{float:right;width:100%}
+    .my-nav{position:absolute}
+    nav #menu_right{display:none}
+}
+@media (min-width:993px){
+    .my-left{float:left;/* width:26%; */width:261px}
+    .my-right{}
+    .my-nav{position:fixed}
+}
+
